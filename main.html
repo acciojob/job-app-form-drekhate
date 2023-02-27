@@ -9,14 +9,18 @@
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
-		<div>
+</script>
+	<form action="" method="post">
+        <label for="portfolio">Portfolio</label>
+        <input type="url" id="portfolio">
+        <br>
         <label for="name">Name*</label>
         <input type="text" id="name" required>
         <br>
         <label for="email">Email*</label>
         <input type="email" id="email" required>
         <br>
-        <label>Gender*</label>
+        <label for="gender">Gender*</label>
         <br>
         <label for="male">Male</label>
         <input type="radio" id="male" name="gender" required>
@@ -24,25 +28,24 @@
         <input type="radio" id="female" name="gender" required>
         <br>
         <label for="laptop">Laptop Brands</label>
-        <select name="" id="laptop">
+        <select name="lap-sel" id="laptop">
+            <option value="Please choose an option">Please choose an option</option>
             <option value="apple">Apple</option>
             <option value="asus">Asus</option>
             <option value="hp">HP</option>
         </select>
         <br>
         <label for="age">Age*</label>
-        <input type="text" id="age">
+        <input type="text" id="age" required>
         <br>
         <label for="dob">DOB*</label>
         <input type="date" id="dob" required>
         <br>
         <label for="password">Password*</label>
-        <input type="password" name="" id="password">
+        <input type="password" name="" id="password" required>
         <br>
-        <button>submit button</button>
-    </div>
-</script>
-
+        <button type="submit">submit button</button>
+    </form>
 </body>
 
 </html>
